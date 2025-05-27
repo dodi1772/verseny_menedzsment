@@ -19,5 +19,9 @@ namespace verseny_menedzsment
             Kor = kor;
             Nem = nem;
         }
+        public void EredmenyEmber()
+        {
+            Console.WriteLine($"Résztvevő neve: {Nev}\nRésztvevő neme: {Nem}\nVerseny neve: {Eredmenyek[0].VersenyNev}\nIdő: {Eredmenyek[0].Ido}\nHelyezés: {Eredmenyek[0].Helyezes}\n");
+        }
     }
 }

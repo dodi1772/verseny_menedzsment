@@ -14,14 +14,10 @@ namespace verseny_menedzsment
         {
             versenyek = new List<Verseny>();
         }
-
-        // Verseny hozzáadása
         public void VersenyHozzaadasa(Verseny verseny)
         {
             versenyek.Add(verseny);
         }
-
-        // Versenyek listázása
         public void VersenyekListazasa()
         {
             Console.WriteLine("Versenyek listája:");
@@ -30,8 +26,6 @@ namespace verseny_menedzsment
                 Console.WriteLine($"Név: {v.Nev}, Kategória: {v.Kategoria}, Max. indulók: {v.MaxIndulo}, Indulók száma: {v.Indulok.Count}");
             }
         }
-
-        // Verseny eredmények kiírása (egyszerűsített, csak indulókat írja ki)
         public void VersenyEredmenyekKiirasa()
         {
             foreach (var v in versenyek)

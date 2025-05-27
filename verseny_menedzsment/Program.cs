@@ -4,10 +4,7 @@
     {
         static void Main(string[] args)
         {
-            // VersenyMenet példány létrehozása
             VersenyMenet menet = new VersenyMenet();
-
-            // Versenyek létrehozása
             Futas futas = new Futas("Futó1", 3);
             Uszas uszas = new Uszas("Úszó2", 2);
             Kerekpar kerekpar = new Kerekpar("Bicikli3", 2);
@@ -34,6 +31,11 @@
             uszas.KiirUtasitas();
             kerekpar.KiirUtasitas();
             menet.VersenyEredmenyekKiirasa();
+            Console.WriteLine();
+            v1.EredmenyEmber();
+            v2.EredmenyEmber();
+            v3.EredmenyEmber();
+            v4.EredmenyEmber();
 
         }
     }
