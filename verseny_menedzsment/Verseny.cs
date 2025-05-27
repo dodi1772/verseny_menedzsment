@@ -30,5 +30,29 @@ using System.Threading.Tasks;
                 Indulok.Add(v);
                 return true;
             }
-        }
+            public void LeggyorsabbVersenyzo()
+            {
+                string nev = "";
+                TimeSpan legjobbido = TimeSpan.MaxValue;
+                foreach (var versenyzo in Indulok)
+                {
+                    foreach (var eredmeny in versenyzo.Eredmenyek)
+                    {
+                        if (eredmeny.VersenyNev == this.Nev && eredmeny.Ido < legjobbido)
+                        {
+                            legjobbido = eredmeny.Ido;
+                            nev = versenyzo.Nev;
+                        }
+                    }
+                }
+                if (nev != "")
+                {
+                    Console.WriteLine($"A leggyorsabb volt a(z) {Nev} versenyen: {nev} ({legjobbido})");
+                }
+                else
+                {
+                    Console.WriteLine("Nincs eredmény");
+                }
+            }
+    }
     }
