@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace verseny_menedzsment
 {
-    internal class Eredmeny
+    public class Eredmeny
     {
         public string VersenyNev { get; set; }
         public TimeSpan Ido { get; set; }

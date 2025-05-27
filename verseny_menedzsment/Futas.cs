@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace verseny_menedzsment
 {
-    internal class Futas
+    public class Futas : Verseny
     {
+        public Futas(string nev, int maxIndulo)
+            : base(nev, "futás", maxIndulo)
+        {
+        }
+
+        public void KiirUtasitas()
+        {
+            Console.WriteLine($"A versenyzők 5 km futással kezdik a(z) {Nev} versenyt.");
+        }
     }
 }
